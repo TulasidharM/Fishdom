@@ -8,6 +8,7 @@ A lightweight proof-of-concept React + TailwindCSS website for an all-in-one fis
 - Services overview cards
 - About section
 - Contact form
+- Dark mode toggle with saved preference
 
 ## Tech Stack
 - React (Vite)

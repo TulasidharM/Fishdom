@@ -47,15 +47,18 @@ function SetupCards() {
   return (
     <section id="setups" className="mx-auto w-full max-w-6xl px-6 py-14">
       <h2 className="text-2xl font-bold md:text-3xl">Aquarium Setups</h2>
-      <p className="mt-2 text-slate-600">Choose from thoughtfully designed setups tailored to your space and style.</p>
+      <p className="mt-2 text-slate-600 dark:text-slate-300">Choose from thoughtfully designed setups tailored to your space and style.</p>
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {setups.map((setup) => (
-          <article key={setup.name} className="overflow-hidden rounded-2xl border border-cyan-100 bg-white shadow-soft">
+          <article
+            key={setup.name}
+            className="overflow-hidden rounded-2xl border border-cyan-100 bg-white shadow-soft dark:border-slate-700 dark:bg-slate-800"
+          >
             <img src={setup.image} alt={setup.name} className="h-44 w-full object-cover" />
             <div className="space-y-2 p-5">
               <h3 className="text-lg font-semibold">{setup.name}</h3>
-              <p className="text-sm text-slate-600">{setup.description}</p>
-              <p className="pt-2 text-sm font-semibold text-ocean-700">{setup.price}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-300">{setup.description}</p>
+              <p className="pt-2 text-sm font-semibold text-ocean-700 dark:text-cyan-300">{setup.price}</p>
             </div>
           </article>
         ))}
